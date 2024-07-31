@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+margin-top: 18px;
+}
+
+
+#block {
+  background: #333;
+  height: 140px;
+  width: 100%;
+  border: 4px solid silver;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  opacity: 100%;
+}
+
+.inblock {
+  color: white;
+  font-size: 2.4em;
+  height: 22px;
+  margin: 15px 0px 0px 630px;
+  display: inline-block;
+
+}
+
+.kg {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flag_of_Kyrgyzstan.svg/2560px-Flag_of_Kyrgyzstan.svg.png') no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+  right: 815px;
+  top: 14px;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+}
+.myacc {
+    color: black;
+    /* position: absolute;
+    right: 0; */
+    margin-right: 20px;
+    margin-top: 19px;
+    font-family: 'Anton SC';
+    display: inline-block;
+    float: right;
+}
+
+.myacc a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.myacc:hover {
+  opacity: 80%;
+  color: grey;
+
+}
+
+.bars {
+  position: relative;
+  right: -1330px;
+  top: -88px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#bars {
+  font-size: 1.5em;
+  color: black;
+}
+
+.spisok {
+  display: none;
+  position: absolute;
+  left: -300px;
+  top: 0;
+  width: 195px;
+  background: grey;
+  box-shadow: 0px 8px 16px 0px rgba (0,0,0,0,2);
+  z-index: 1;
+}
+
+.spisok a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.spisok a:hover {
+  background: #f9f9f9;
+}
+.bars:hover .spisok,
+.bars:focus .spisok {
+  display: block;
+}
+
+
+
+
+
+
+#user {
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  right: 120px;
+  top: 93px;
+  transition: transform 0.3s ease;
+}
+
+#user:hover {
+  transform: scale(1.2);
+  opacity: 80%;
+}
+
+#search {
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  transition: transform 0.3s ease;
+}
+
+#search:hover {
+  opacity: 80%;
+  transform: scale(1.25);
+}
+
+#bars {
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  right: 75px;
+  top: 25px;
+  transition: transform 0.3s ease;
+}
+
+#bars:hover {
+  opacity: 0.8;
+  transform:scale(1.3);
+}
+
+.title {
+  color: white;
+  text-align: left;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Anton SC';
+  text-transform: capitalize;
+  line-height: normal;
+  word-spacing: 100px;
+  transition: transform 0.3s ease;
+  margin: 14px 0px 0px 15px;
+  float: left;
+}
+
+.title a {
+  text-decoration: none;
+  color: white;
+}
+.title:hover {
+  transform: scale(1.1);
+  opacity: 80%;
+  color: grey;
+}
+.background-container {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  height: 800px; /* Высота контейнера, отображаемого на странице */
+  overflow: hidden; /* Скрывает все, что выходит за пределы контейнера */
+}
+
+#first {
+  position: absolute;
+  top: -700px; /* Смещает фоновое изображение вверх на 300 пикселей */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #8fc2bf url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/57558712-5ebe-4abb-9984-879f9e896b4c/air-force-1-07-easyon-womens-shoes-q2Nz01.png') no-repeat center top;
+  background-size: cover; /* Растягивает изображение, чтобы оно полностью покрывало элемент */
+  background-position: center top; /* Устанавливает начальное положение фона */
+  height: 2000px; /* Высота элемента, чтобы изображение полностью заполнило контейнер */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  align-items: center;
+}
+
+
+
+.photo1{
+  width: 300px;
+  height: 300px;
+  background: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb51b3b1-8192-4675-9db5-9f8e196cb1aa/force-1-le-little-kids-shoes-d0vJBr.png') no-repeat center;
+  background-size: cover;
+  position: relative;
+  right: -100px;
+  bottom: -20px;
+  display: inline-block;
+  border-radius: 15px;
+  border: 2px solid black;
+  transition: transform 0.3s ease;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.photo1:hover {
+  opacity: 80%;
+  transform: scale(1.09);
+}
+
+.af1{
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  position: relative;
+  right: -100px;
+  bottom: -18px;
+}
+
+#airf1 {
+  font-family: 'Anton SC';
+  font-weight: lighter;
+  font-size: 1.7em;
+}
+
+.kid {
+  position: relative;
+  left: -210px;
+  bottom: -48px;
+  font-family: 'Anton SC';
+  color: grey;
+  opacity: 50%;
+
+}
+.photo2{
+  width: 300px;
+  height: 300px;
+  background: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9208980d-6d39-4171-a0ee-412f8af24781/air-force-1-07-lv8-1-mens-shoes-x0bMdL.png') ;
+  background-size: cover;
+  position: relative;
+  right: -260px;
+  bottom: -20px;
+  display: inline-block;
+  border-radius: 15px;
+  border: 2px solid black;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  transition: transform 0.3s ease;
+}
+
+.photo2:hover {
+  transform: scale(1.09);
+}
+
+.LV8 {
+  position: relative;
+  left: -310px;
+  bottom: -20px;
+  font-family: 'Anton SC';
+  font-weight: lighter;
+  font-size: 1.7em;
+}
+
+.shoe_1 {
+  position: relative;
+  right: -570px;
+  color: grey;
+  font-family: 'Anton SC';
+  font-weight: lighter;
+  opacity: 50%;
+  color: grey;
+}
+
+
+.photo3{
+  width: 300px;
+  height: 300px;
+  background: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e43b0a37-16c1-452c-8b07-23e167a46bba/NIKE+AIR+FORCE+1+SP.png');
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+  border: 2px solid black;
+  right: -160px;
+  bottom: -20px;
+  display: inline-block;
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  transition: transform 0.3s ease;
+}
+
+.photo3:hover {
+  transform: scale(1.09);
+}
+
+.shoe_2 {
+  position: absolute;
+  right: 170px;
+  top: 1260px;
+  font-size: 1.7em;
+  font-family: 'Anton SC';
+  font-weight: lighter;
+}
+
+.shoe_22 {
+  position: absolute;
+  right: 250px;
+  top: 1290px;
+  color: grey;
+  opacity: 50%;
+  font-family: 'Anton SC'
+
+}
+.aboutus {
+  color: blue;
+  text-decoration: none;
+  margin: 0px 0px 30px 10px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+.aboutus:hover {
+  color: red;
+  text-decoration: underline;
+}
+.mailus {
+  position: absolute;
+  font-size: 1em;
+  left: 26px;
+  top: 25px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Anton SC'
+}
+
+.mailus:hover {
+  color: grey;
+}
+
+/* .nike {
+  color: blue;
+  text-decoration: none;
+}
+
+.nike:hover {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+ /* hover при наведении */
+/* .nike:visited {
+  color:grey;
+  text-decoration-color: grey;
+}
+ /* visited после перехода по ссылке */
+/* .P::first-letter{
+  color: blue; */
+
+/* первая буква  */
+
+
+input:focus {
+  background-color: #808080;
+  color: black;
+}
+ /* при нажатии на строку */
+
+
+ /* text-align расположение текста, font-style курсив или нормал,font-weight жирный текст */
+ /* font-family шрифт */
+
+/* .buysell {
+  font-size: 2.3em;
+  text-align: left;
+  font-weight: bolder;
+  word-spacing: normal;
+  margin-top: 18px;
+  margin-left: 10px;
+} */
+/* к классам обращаться через . */
+/* к identific0on обращаться через # */
+
+i {
+  color: black;
+}
+
+/* li:last-of-type {
+  text-decoration: line-through;
+} */
+
+/* last-of-type последняя подходщяя строка  */
+
+div i {
+  color: blue;
+}
+  /* вложенный селектор  */
+  /* к тегам можно обращаться 4 способами  */
+  /* по названию, по классу,  по id, по вложенному селектору :  */
+   /* div,       .name-class,  #id,  div i */
+   pre {
+     text-align: right;
+
+   }
+
+.div1 {
+  text-align: center;
+}
